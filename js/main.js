@@ -327,7 +327,7 @@ function openModal(id) {
       <p class="modal-desc">${t.desc}</p>
       <div class="modal-actions">
         <a class="btn btn-whatsapp btn-lg" href="${whatsappLink(msg)}" target="_blank" rel="noopener">
-          <span style="font-size:1.2rem">🟢</span> Contacter sur WhatsApp pour ces places
+          <span style="font-size:1.2rem">🟢</span> Contacter sur WhatsApp
         </a>
         <p class="modal-note">Réponse rapide • Billets vérifiés • Aucun paiement sur le site</p>
       </div>

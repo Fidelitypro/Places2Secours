@@ -522,7 +522,7 @@ section { padding: 96px 0; position: relative; }
 
 .tickets-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
   gap: 26px;
   padding-bottom: 60px;
 }
@@ -655,6 +655,7 @@ section { padding: 96px 0; position: relative; }
 .detail .v { font-weight: 600; font-size: 1rem; }
 .modal-desc { color: var(--text-muted); font-size: 0.96rem; margin-bottom: 24px; line-height: 1.65; }
 .modal-actions { display: flex; flex-direction: column; gap: 10px; }
+.modal-actions .btn { white-space: normal; text-align: center; }
 .modal-note { font-size: 0.8rem; color: var(--text-dim); text-align: center; margin-top: 4px; }
 
 /* ---------- Reveal au scroll ---------- */
