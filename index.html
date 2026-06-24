@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Places2Secours — Vos billets quand c'est sold out</title>
+  <meta name="description" content="Places2Secours déniche et sécurise vos billets pour les événements complets : concerts, festivals, DJ sets. Le sold out n'existe plus." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Décor galaxie -->
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">
+          <span class="logo">🚀</span> Places<b>2</b>Secours
+        </a>
+        <nav class="nav-links">
+          <a href="#how">Comment ça marche</a>
+          <a href="#trust">Confiance</a>
+          <a href="#faq">FAQ</a>
+          <a href="billets.html">Les billets</a>
+          <a class="btn btn-whatsapp" data-wa="Bonjour Places2Secours, j'aimerais avoir des infos sur vos billets disponibles 🎟️" style="padding:9px 18px">WhatsApp</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="float-orb" style="width:120px;height:120px;background:radial-gradient(circle at 30% 30%,#a855f7,#4338ca);top:40px;left:8%"></span>
+      <span class="float-orb" style="width:70px;height:70px;background:radial-gradient(circle at 30% 30%,#38bdf8,#1e3a8a);top:120px;right:10%;animation-delay:-3s"></span>
+
+      <span class="eyebrow">✦ Concerts · Festivals · DJ Sets</span>
+      <h1>Le <span class="gradient-text">sold out</span><br />n'existe plus.</h1>
+      <p class="lead">
+        Places2Secours déniche et sécurise les billets des événements complets <em>avant</em> qu'ils
+        ne disparaissent. Quand tout le monde a raté la billetterie, vous avez encore votre place.
+      </p>
+      <div class="hero-cta">
+        <a href="billets.html" class="btn btn-primary btn-lg">Voir les billets disponibles</a>
+        <a class="btn btn-glass btn-lg" data-wa="Bonjour Places2Secours 👋 je cherche des places, pouvez-vous m'aider ?">💬 Parler sur WhatsApp</a>
+      </div>
+
+      <div class="hero-badges">
+        <div class="hero-badge"><span class="dot"></span> Billets 100% vérifiés</div>
+        <div class="hero-badge"><span class="dot"></span> Contact direct & humain</div>
+        <div class="hero-badge"><span class="dot"></span> Réponse en moins d'1h</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="glass stats reveal">
+        <div class="stat"><div class="val gradient-text" data-count="850" data-suffix="+">0</div><div class="lab">Billets placés</div></div>
+        <div class="stat"><div class="val gradient-text" data-count="100" data-suffix="%">0</div><div class="lab">Billets authentiques</div></div>
+        <div class="stat"><div class="val gradient-text" data-count="60" data-suffix=" min">0</div><div class="lab">Délai de réponse moyen</div></div>
+        <div class="stat"><div class="val gradient-text" data-count="5" data-suffix=" ans">0</div><div class="lab">D'expérience events</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comment ça marche -->
+  <section id="how">
+    <div class="wrap">
+      <div class="text-center">
+        <span class="eyebrow reveal">Comment ça marche</span>
+        <h2 class="section-title reveal">Simple, rapide, <span class="gradient-text">sans stress</span></h2>
+        <p class="section-sub center-block reveal">On anticipe les events qui vont afficher complet, on sécurise les meilleures places, et on vous les transmet en direct.</p>
+      </div>
+      <div class="grid-3">
+        <div class="glass step reveal">
+          <div class="num">ÉTAPE 01</div>
+          <div class="ic">🔭</div>
+          <h3>On anticipe</h3>
+          <p>On repère les concerts et festivals les plus demandés et on achète les places <strong>avant le sold out</strong>, au meilleur emplacement.</p>
+        </div>
+        <div class="glass step reveal">
+          <div class="num">ÉTAPE 02</div>
+          <div class="ic">🛡️</div>
+          <h3>On sécurise</h3>
+          <p>Chaque billet est <strong>vérifié et conservé en sécurité</strong>, prêt à être transféré. Pas de surprise, pas de faux billet.</p>
+        </div>
+        <div class="glass step reveal">
+          <div class="num">ÉTAPE 03</div>
+          <div class="ic">🤝</div>
+          <h3>On vous connecte</h3>
+          <p>Un message WhatsApp suffit. On répond vite, on confirme la dispo et on s'arrange en toute transparence. <strong>100% humain.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous faire confiance -->
+  <section id="trust">
+    <div class="wrap">
+      <div class="text-center">
+        <span class="eyebrow reveal">Pourquoi nous faire confiance</span>
+        <h2 class="section-title reveal">La place de secours en qui <span class="gradient-text">vous pouvez croire</span></h2>
+      </div>
+      <div class="grid-2">
+        <div class="glass feature reveal">
+          <div class="ic">✅</div>
+          <div><h4>Billets authentiques garantis</h4><p>Tous les billets sont vérifiés et proviennent de billetteries officielles. Vous recevez exactement ce qui est annoncé.</p></div>
+        </div>
+        <div class="glass feature reveal">
+          <div class="ic">💬</div>
+          <div><h4>Un interlocuteur réel</h4><p>Pas de robot, pas d'usine à clics. Vous échangez directement avec une personne qui connaît son sujet.</p></div>
+        </div>
+        <div class="glass feature reveal">
+          <div class="ic">🔍</div>
+          <div><h4>Transparence totale</h4><p>Le prix, l'emplacement, la quantité : tout est annoncé clairement avant de vous décider. Aucune mauvaise surprise.</p></div>
+        </div>
+        <div class="glass feature reveal">
+          <div class="ic">⚡</div>
+          <div><h4>Réactivité éclair</h4><p>Les bonnes places partent vite. On répond en général en moins d'une heure pour ne pas laisser filer l'occasion.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section>
+    <div class="wrap">
+      <div class="text-center">
+        <span class="eyebrow reveal">Ils ont retrouvé leur place</span>
+        <h2 class="section-title reveal">Ce qu'ils en <span class="gradient-text">disent</span></h2>
+      </div>
+      <div class="grid-3">
+        <div class="glass quote reveal">
+          <div class="stars">★★★★★</div>
+          <p>« Le concert était complet depuis des semaines. En une soirée j'avais mes deux places. Service au top, je recommande. »</p>
+          <div class="who"><div class="av">M</div><div><b>Marina L.</b><span>Concert · Paris</span></div></div>
+        </div>
+        <div class="glass quote reveal">
+          <div class="stars">★★★★★</div>
+          <p>« Hyper réactif sur WhatsApp et super clair sur les places. Tout était exactement comme annoncé. »</p>
+          <div class="who"><div class="av">K</div><div><b>Karim B.</b><span>Festival · Lyon</span></div></div>
+        </div>
+        <div class="glass quote reveal">
+          <div class="stars">★★★★★</div>
+          <p>« J'avais peur de me faire avoir, et finalement c'est la transaction la plus simple que j'ai faite. Merci ! »</p>
+          <div class="who"><div class="av">S</div><div><b>Sofia R.</b><span>DJ Set · Marseille</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap" style="max-width:820px">
+      <div class="text-center">
+        <span class="eyebrow reveal">Questions fréquentes</span>
+        <h2 class="section-title reveal">Tout ce qu'il faut <span class="gradient-text">savoir</span></h2>
+      </div>
+      <div class="faq">
+        <div class="glass faq-item reveal">
+          <div class="faq-q">Les billets sont-ils authentiques ? <span class="chev">+</span></div>
+          <div class="faq-a">Oui. Tous les billets proviennent de billetteries officielles et sont vérifiés avant d'être proposés. Vous savez exactement quel emplacement vous obtenez.</div>
+        </div>
+        <div class="glass faq-item reveal">
+          <div class="faq-q">Comment se passe la prise de contact ? <span class="chev">+</span></div>
+          <div class="faq-a">Tout se fait par WhatsApp. Vous cliquez sur un billet, le bouton ouvre une conversation pré-remplie avec les infos de l'événement, et on s'arrange directement avec vous.</div>
+        </div>
+        <div class="glass faq-item reveal">
+          <div class="faq-q">Peut-on payer directement sur le site ? <span class="chev">+</span></div>
+          <div class="faq-a">Non. Ce site est une vitrine de présentation : aucune transaction n'a lieu en ligne. Les modalités sont convenues de personne à personne via WhatsApp.</div>
+        </div>
+        <div class="glass faq-item reveal">
+          <div class="faq-q">Et si l'événement que je cherche n'est pas listé ? <span class="chev">+</span></div>
+          <div class="faq-a">Écrivez-nous quand même sur WhatsApp ! On suit beaucoup d'événements et on peut souvent dénicher des places qui ne sont pas encore affichées ici.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Votre prochain event vous attend 🎉</h2>
+        <p>Parcourez les billets disponibles ou écrivez-nous directement : la bonne place est peut-être encore là.</p>
+        <div class="hero-cta">
+          <a href="billets.html" class="btn btn-glass btn-lg" style="background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.35)">🎟️ Voir les billets</a>
+          <a class="btn btn-whatsapp btn-lg" data-wa="Bonjour Places2Secours 👋 je cherche des places pour un événement, pouvez-vous m'aider ?">💬 Contacter sur WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div style="max-width:340px">
+          <a href="index.html" class="brand"><span class="logo">🚀</span> Places<b>2</b>Secours</a>
+          <p>Votre billet de secours pour les événements complets. On anticipe, on sécurise, on vous connecte.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Accueil</a>
+          <a href="#how">Comment ça marche</a>
+          <a href="billets.html">Les billets</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a data-wa="Bonjour Places2Secours 👋">💬 WhatsApp</a>
+          <a href="billets.html">🎟️ Billets disponibles</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Places2Secours. Tous droits réservés.</span>
+        <span>Fait avec 💜 sous les étoiles</span>
+      </div>
+      <p class="disclaimer">
+        Places2Secours est un service d'intermédiation. Ce site est une vitrine de présentation et ne constitue pas
+        une plateforme de transaction ou de revente en ligne. Toute mise en relation et tout accord se font
+        directement entre particuliers via WhatsApp.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

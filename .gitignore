@@ -1,0 +1,14 @@
+# Dépendances / build
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Config de prévisualisation locale (Claude Code)
+.claude/

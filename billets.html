@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billets disponibles — Places2Secours</title>
+  <meta name="description" content="Découvrez les billets disponibles via Places2Secours pour les événements complets. Cliquez sur un billet et contactez-nous sur WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Décor galaxie -->
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">
+          <span class="logo">🚀</span> Places<b>2</b>Secours
+        </a>
+        <nav class="nav-links">
+          <a href="index.html#how">Comment ça marche</a>
+          <a href="index.html#trust">Confiance</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="billets.html" class="active">Les billets</a>
+          <a class="btn btn-whatsapp" data-wa="Bonjour Places2Secours, j'aimerais avoir des infos sur vos billets disponibles 🎟️" style="padding:9px 18px">WhatsApp</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- En-tête de page -->
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">🎟️ Billets disponibles</span>
+      <h1>Les places <span class="gradient-text">à saisir</span></h1>
+      <p>Cliquez sur un billet pour voir le détail des places et nous contacter directement sur WhatsApp. Les bonnes places partent vite — n'attendez pas.</p>
+
+      <div class="filters">
+        <span class="chip active" data-filter="all">Tout</span>
+        <span class="chip" data-filter="concerts">Concerts</span>
+        <span class="chip" data-filter="dj-sets">DJ Sets</span>
+        <span class="chip" data-filter="festivals">Festivals</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grille des billets (injectée par JS) -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="tickets-grid" id="tickets-grid"></div>
+    </div>
+  </section>
+
+  <!-- Bandeau aide -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Vous ne trouvez pas votre event ? 👀</h2>
+        <p>On suit bien plus d'événements que ceux affichés ici. Dites-nous ce que vous cherchez, on regarde ce qu'on peut faire.</p>
+        <a class="btn btn-whatsapp btn-lg" data-wa="Bonjour Places2Secours 👋 je cherche des places pour un événement précis, est-ce que vous pouvez m'aider ?">💬 Demander un événement sur WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div style="max-width:340px">
+          <a href="index.html" class="brand"><span class="logo">🚀</span> Places<b>2</b>Secours</a>
+          <p>Votre billet de secours pour les événements complets. On anticipe, on sécurise, on vous connecte.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Accueil</a>
+          <a href="index.html#how">Comment ça marche</a>
+          <a href="billets.html">Les billets</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a data-wa="Bonjour Places2Secours 👋">💬 WhatsApp</a>
+          <a href="billets.html">🎟️ Billets disponibles</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Places2Secours. Tous droits réservés.</span>
+        <span>Fait avec 💜 sous les étoiles</span>
+      </div>
+      <p class="disclaimer">
+        Places2Secours est un service d'intermédiation. Ce site est une vitrine de présentation et ne constitue pas
+        une plateforme de transaction ou de revente en ligne. Toute mise en relation et tout accord se font
+        directement entre particuliers via WhatsApp.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal billet -->
+  <div class="modal-overlay" id="modal" role="dialog" aria-modal="true">
+    <div class="modal glass"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
