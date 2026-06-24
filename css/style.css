@@ -198,6 +198,9 @@ section { padding: 96px 0; position: relative; }
 }
 .nav-links a:hover { color: var(--text); background: var(--glass-bg-strong); }
 .nav-links a.active { color: var(--text); }
+/* Le bouton WhatsApp du header doit rester blanc (sinon `.nav-links a` le grise) */
+.nav-links a.btn-whatsapp,
+.nav-links a.btn-whatsapp:hover { color: #ffffff; }
 
 .nav-toggle {
   display: none;
