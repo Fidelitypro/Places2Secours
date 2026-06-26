@@ -697,6 +697,8 @@ section { padding: 96px 0; position: relative; }
   .modal-details { grid-template-columns: 1fr; }
   .hero-badges { gap: 16px; }
   .footer-bottom { flex-direction: column; }
+  .cta-band { padding: 40px 20px; }
+  .cta-band .btn-lg { white-space: normal; padding: 14px 22px; font-size: 0.95rem; max-width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
